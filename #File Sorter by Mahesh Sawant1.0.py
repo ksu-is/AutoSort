@@ -58,6 +58,26 @@ if answer1 == "one":
         if dest == "":
             shutil.move(file,'../all')
 elif answer1 == 'separate':
+    answer2 = input("Would you like to separate further? Yes or No.")
+    if answer2 == 'yes':
+        answer3 = input("Which would you like to separate? Images,Text, Videos,etc...")
+        if answer3 == 'images':
+            for file in files:
+                dest = ""
+                for ex in images:
+                    if file.endswith(ex):
+                        dest='../Images'
+                        shutil.move(file,dest)
+                        break
+        elif answer3 == 'text':
+            for file in files:
+                dest = ""
+                for ex in images:
+                    if file.endswith(ex):
+                        dest='../Text'
+                        shutil.move(file,dest)
+                        break
+
     print("Sorting the files...")
 
     for file in files:
