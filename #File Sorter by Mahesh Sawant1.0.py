@@ -77,6 +77,38 @@ elif answer1 == 'separate':
                         dest='../Text'
                         shutil.move(file,dest)
                         break
+        elif answer3 == 'videos':
+            for file in files:
+                dest = ""
+                for ex in images:
+                    if file.endswith(ex):
+                        dest='../Text'
+                        shutil.move(file,dest)
+                        break
+        elif answer3 == 'sounds':
+            for file in files:
+                dest = ""
+                for ex in images:
+                    if file.endswith(ex):
+                        dest='../Text'
+                        shutil.move(file,dest)
+                        break
+        elif answer3 == 'applications':
+            for file in files:
+                dest = ""
+                for ex in images:
+                    if file.endswith(ex):
+                        dest='../Text'
+                        shutil.move(file,dest)
+                        break
+        elif answer3 == 'code':
+            for file in files:
+                dest = ""
+                for ex in images:
+                    if file.endswith(ex):
+                        dest='../Text'
+                        shutil.move(file,dest)
+                        break
 
     print("Sorting the files...")
 
